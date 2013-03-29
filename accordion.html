@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>手风琴效果</title>
+    <style type="text/css">
+body{margin:0 0 0 0;background:#fff;font-size:12px;font-family:宋体,Verdana;color:#666;height:100%}
+a:link,a:visited {text-decoration: none;color: #0000ff;font-family: "宋体";font-size: 9pt; outline:none;}
+a:hover{color:#ff0000;font-family: "宋体";font-size: 9pt;}
+ul{ margin:0; list-style-type:none;}
+.div_MemberManagerMenu{margin:0px;font-size:12px; width:200px; height:1%;line-height:20px;  float:left; display:inline;background:#F0F0F0; border:1px solid #DDD; }
+.div_MemberManagerMenuItem{width:100%; height:1%;line-height:20px;float:left; display:inline;}
+.div_MemberManagerMenuItem ul li  a{ text-decoration: none;color: #0000ff;font-family: "宋体";font-size: 9pt;}
+.div_MemberManagerMenuItem ul li  a:hover {color:#ff0000;font-family: "宋体";font-size: 9pt;}
+.div_MemberManagerMenuItem ul li { padding:5px 6px 4px 6px; border-bottom:1px solid #EEE;}
+.div_MemberManagerMenuItem h6{cursor:pointer;background:#F0F0F0 ; padding:5px 6px 4px 6px; width:92%; border:1px solid #E0E0E0;}
+
+
+</style>
+</head>
+<body>
+
+     <div style="width:300px;;float:left;margin-left:20px" id="div_MemberManagerMenu">
+         <div class="div_MemberManagerMenuItem">
+             <h6>
+                 菜单1</h6>
+             <ul>
+                 <li><a href='#'>1111</a></li>
+                 <li><a href='#'>2222222</a></li>
+                 <li><a href='#'>3333333</a></li>
+             </ul>
+         </div>
+
+         <div class="div_MemberManagerMenuItem">
+             <h6>
+                 菜单2</h6>
+             <ul>
+                 <li><a href='#'>1111</a></li>
+                 <li><a href='#'>2222222</a></li>
+                 <li><a href='#'>3333333</a></li>
+                 <li><a href='#'>4444444</a></li>
+                 <li><a href='#'>55555555</a></li>
+                 <li><a href='#'>66666666</a></li>
+                 <li><a href='#'>7777777777</a></li>
+             </ul>
+
+         </div>
+
+         <div class="div_MemberManagerMenuItem">
+             <h6>
+                 菜单3</h6>
+             <ul>
+                 <li><a href='#'>1111</a></li>
+                 <li><a href='#'>2222222</a></li>
+                 <li><a href='#'>3333333</a></li>
+                 <li><a href='#'>4444444</a></li>
+                 <li><a href='#'>55555555</a></li>
+                 <li><a href='#'>66666666</a></li>
+                 <li><a href='#'>7777777777</a></li>
+                 <li><a href='#'>888888888</a></li>
+             </ul>
+         </div>
+         <div class="div_MemberManagerMenuItem">
+             <h6>
+                 菜单4</h6>
+             <ul>
+                 <li><a href='#'>1111</a></li>
+                 <li><a href='#'>2222222</a></li>
+                 <li><a href='#'>3333333</a></li>
+                 <li><a href='#'>4444444</a></li>
+             </ul>
+         </div>
+         <div class="div_MemberManagerMenuItem">
+             <h6>
+                 菜单5</h6>
+             <ul>
+                 <li><a href='#'>1111</a></li>
+                 <li><a href='#'>2222222</a></li>
+                 <li><a href='#'>3333333</a></li>
+                 <li><a href='#'>4444444</a></li>
+                 <li><a href='#'>55555555</a></li>
+                 <li><a href='#'>66666666</a></li>
+             </ul>
+         </div>
+     </div>
+     
+</body>
+
+<script type="text/javascript" src="Accordion.js" charset='utf-8'></script>
+<script type="text/javascript">
+
+    (function(){
+        var mainMenu = document.getElementById("div_MemberManagerMenu");
+       var accordion = new __AccordionClass();
+       //accordion.isMultiExpand = true; // 是否可已同时展开多个
+       accordion.initAccordion( mainMenu.getElementsByTagName('h6'), mainMenu.getElementsByTagName('ul'));
+
+    })();  
+</script>
+</html>
