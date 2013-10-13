@@ -7,7 +7,7 @@ php笔记
 apache+php配置
 
 1  安装apache 如果安装了wamp 回混乱
-2  下载php 将所需要的扩展打开 包括entension_dir='E:\php\ext'(主要最好用单引号) 如需要改时区timezone
+2  下载php 将所需要的扩展打开 包括extension_dir='E:\php\ext'(主要最好用单引号) 如需要改时区timezone
 3  将php目录配置到环境变量包括 E:\php和E:\php\ext
 3  修改apache配置文件 在最下面加入如下内容
  PHPIniDir "E:/mywamp/php"
